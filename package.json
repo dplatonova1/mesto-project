@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dplatonova1/mesto.git"
+    "url": "git+https://github.com/dplatonova1/mesto-project.git"
   },
   "author": "Daria Platonova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dplatonova1/mesto/issues"
+    "url": "https://github.com/dplatonova1/mesto-project/issues"
   },
-  "homepage": "https://github.com/dplatonova1/mesto#readme",
+  "homepage": "https://github.com/dplatonova1/mesto-project",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
