@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -28,7 +28,7 @@
     </div>
     <div class="popup popup_place">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="place" novalidate>
             <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength="2" maxlength="30">
@@ -41,7 +41,7 @@
     </div>
     <div class="popup popup_profile">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="userprofile" novalidate>
             <input type="text" name="username" class="popup__input popup__input_type_username" placeholder="Имя" required minlength="2" maxlength="30">
@@ -54,20 +54,11 @@
     </div>
     <div class="popup popup_image">
       <div class="popup__content-full">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       </div>
     </div>
 
   </div>
-  <script src="js/initialCards.js"></script>
-  <script src="js/api.js"></script> 
-  <script src="js/errors.js"></script>
-  <script src="js/card.js"></script> 
-  <script src="js/cardlist.js"></script> 
-  <script src="js/popup.js"></script> 
-  <script src="js/zoomimage.js"></script> 
-  <script src="js/userinfo.js"></script>
-  <script src="js/formvalidator.js"></script>  
-  <script src="js/script.js"></script> 
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

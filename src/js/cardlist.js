@@ -1,6 +1,5 @@
 
-
-class CardList {
+export class CardList {
   constructor(container, initialArray) {
     this.container = container;
     this.cardArray = initialArray;

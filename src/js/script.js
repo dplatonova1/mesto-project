@@ -1,3 +1,14 @@
+//Импорты
+import {Api} from './api.js';
+import {Card} from './card.js';
+import {CardList} from './cardlist.js';
+import {FormValidator} from './formvalidator.js';
+import {Popup} from './popup.js';
+import {ZoomImage} from './zoomimage.js';
+import {UserInfo} from './userinfo.js';
+
+
+export function main(){
 //Обработка исходного массива карточек
 const container = document.querySelector(".places-list");
 container.addEventListener("click", Card.prototype.like);
@@ -96,3 +107,4 @@ document.forms.place.addEventListener("submit", function(event) {
   cardlist.addCard(cardNew);
   document.forms.place.reset();
 });
+}
