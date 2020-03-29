@@ -71,9 +71,9 @@ document.forms.userprofile.addEventListener("submit", function(event) {
     document.forms.userprofile.elements.job.value
   );
 });
-
+const serverUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 const api = new Api({
-  baseUrl: "https://praktikum.tk/cohort8",
+  baseUrl: serverUrl,
   headers: {
     authorization: "981e69e9-9d65-4905-b010-97bbc117c8ed",
     "Content-Type": "application/json"
