@@ -1,6 +1,6 @@
 {
   "name": "mesto",
-  "version": "1.0.0",
+  "version": "0.0.6",
   "description": "This is an 11th study project for Yandex Praktikum",
   "main": "index.js",
   "scripts": {
