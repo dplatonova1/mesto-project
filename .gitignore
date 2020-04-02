@@ -1,0 +1,6 @@
+# .gitignore 
+/node_modules
+/dist
+/.vscode
+/_DS_Store
+/src/images/_DS_Store

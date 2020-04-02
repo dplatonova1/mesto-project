@@ -1,4 +1,6 @@
-class FormValidator {
+import {errors} from './errors.js'
+
+export class FormValidator {
   constructor(form) {
     this.form = form;
     this.submit = Array.from(this.form.elements).find(

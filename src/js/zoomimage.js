@@ -1,4 +1,6 @@
-class ZoomImage extends Popup {
+import {Popup} from './popup.js';
+
+export class ZoomImage extends Popup {
   constructor(popuptype, container) {
     super(popuptype);
     this.container = container;

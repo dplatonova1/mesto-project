@@ -1,3 +1,14 @@
+//Импорты
+import {Api} from './api.js';
+import {Card} from './card.js';
+import {CardList} from './cardlist.js';
+import {FormValidator} from './formvalidator.js';
+import {Popup} from './popup.js';
+import {ZoomImage} from './zoomimage.js';
+import {UserInfo} from './userinfo.js';
+
+
+export function main(){
 //Обработка исходного массива карточек
 const container = document.querySelector(".places-list");
 container.addEventListener("click", Card.prototype.like);
@@ -60,9 +71,9 @@ document.forms.userprofile.addEventListener("submit", function(event) {
     document.forms.userprofile.elements.job.value
   );
 });
-
+const serverUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 const api = new Api({
-  baseUrl: "https://praktikum.tk/cohort8",
+  baseUrl: serverUrl,
   headers: {
     authorization: "981e69e9-9d65-4905-b010-97bbc117c8ed",
     "Content-Type": "application/json"
@@ -96,3 +107,4 @@ document.forms.place.addEventListener("submit", function(event) {
   cardlist.addCard(cardNew);
   document.forms.place.reset();
 });
+}
