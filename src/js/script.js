@@ -71,7 +71,7 @@ document.forms.userprofile.addEventListener("submit", function(event) {
     document.forms.userprofile.elements.job.value
   );
 });
-const serverUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
+const serverUrl = process.env.NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort8' : 'https://nomoreparties.co/cohort8';
 const api = new Api({
   baseUrl: serverUrl,
   headers: {
